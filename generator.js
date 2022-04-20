@@ -1,10 +1,12 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+https://www.linkedin.com/in/kevin-hernandez-5a8243167/
+
 inquirer
     .prompt([{
-            message: "Enter your GitHub",
-            name: "username",
+            message: "Enter your Name",
+            name: "name",
         },
         {
             message: "Enter your location: ",
@@ -21,7 +23,8 @@ inquirer
         {
             message: "Share your github URL: ",
             name: "github",
-        }])
+        }
+        ])
         .then(function(data) {
             console.log(data);
 
@@ -38,7 +41,7 @@ inquirer
             </head>
             <body>
                 <div class="jumbotron p-3">
-                    <h1 class="display-4">Hello ${data.username}</h1>
+                    <h1 class="display-4">Hello ${data.name}</h1>
                     <p class="lead">Location: ${data.location}</p>
                     <p class="lead">About me: ${data.bio}</p>
                     <hr class="my-4">
