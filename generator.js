@@ -1,8 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-https://www.linkedin.com/in/kevin-hernandez-5a8243167/
-
 inquirer
     .prompt([{
             message: "Enter your Name",
